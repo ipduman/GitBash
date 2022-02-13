@@ -1,0 +1,85 @@
+Домашнее задание 1 по Git Bash .
+Первое ДЗ 
+Linux terminal (GitBash) commands
+
+1) Посмотреть где я
+pwd
+2) Создать папку
+mkdir hw1linux
+3) Зайти в папку
+cd hw1linux
+4) Создать 3 папки
+mkdir fol_1 fol_2 fol_3
+5) Зайти в любоую папку
+cd fol_1
+6) Создать 5 файлов (3 txt, 2 json)
+touch f_1.txt f_2.txt f_3.txt j_1.json j_2.json
+7) Создать 3 папки
+mkdir feb jan march
+8. Вывести список содержимого папки
+ls -R
+9) + Открыть любой txt файл
+cat f_1.txt
+10) + написать туда что-нибудь, любой текст.
+vim f_1.txt
+Insert
+print text
+
+11) + сохранить и выйти.
+Esc : wq
+12) Выйти из папки на уровень выше
+cd ..
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.
+mv fol_1/f_3.txt fol_3/f_3.txt
+mv fol_1/f_4.txt fol_3/f_3_1/f_3_1_1/f_4.txt
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.
+cp f_2.txt feb/f_2.txt
+cp j_2.json jan/j_2.json
+
+15) Найти файл по имени
+find . -name j_2
+
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+tail -f f_2.txt
+17) вывести несколько первых строк из текстового файла
+head f_2.txt
+18) вывести несколько последних строк из текстового файла
+tail -n3 f_2.txt
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.
+less j_2.json
+q
+20) вывести дату и время
+date
+=========
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000
+curl 'http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000' \
+  -H 'Connection: keep-alive' \
+  -H 'Cache-Control: max-age=0' \
+  -H 'Upgrade-Insecure-Requests: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.82 Safari/537.36' \
+  -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
+  -H 'Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7' \
+  --compressed \
+  --insecure
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+Создать файл script.sh внутри будет следующее:
+#!/bin/bash
+cd hw1linux2
+mkdir fol_1 fol_2 fol_3
+cd fol_1
+touch f_1.txt f_2.txt f_3.txt f_4.txt j_2.json
+mkdir feb jan march
+ls -R
+cd ..
+mv fol_1/f_3.txt fol_3/f_3.txt
+mv fol_1/f_4.txt fol_3/f_4.txt
+
+=====================
+1) Посмотреть где я - pwd
+2) Создать папку - mkdir foldername
+3) Зайти в папку - cd foldername
