@@ -1,0 +1,19 @@
+Commonly used testing checklists
+Functional (black-box) checklists contain checks for dominant functions of the complete system or for the definite functions of the lower levels.
+System elements checklists (white-box) examine sub-systems and modules of higher levels as well as special data items at secondary levels.
+Structure/feature checklists path through various aspects such as the list of customers and producers for definite sources or units sharing some average data, etc.
+Properties checklists test fixed values such as definite specification units, code systems, etc.
+
+Advantages of using checklists in testing
+Checklist-based testing is widely used by QA experts advocating for its convenience and productivity. Their knowledge and experience form the base for performance testing of a high quality. Main reasons to use this type of tests are:
+
+Flexibility. This kind of checking can be used in all testing types.
+Easy to create. It is not difficult to create, use and maintain a checklist.
+Analyzing the results. Checklists are easy to follow and examine.
+Team integration. The checklist can be ready-made guidance and help new testing personnel to integrate into work.
+Deadlines control. This type of testing helps to control test accomplishment and not to miss some critical bugs before the deadline.
+Difficulties of using checklists in testing
+Different interpretation. QA engineers with various backgrounds can accomplish identical tasks using different approaches.
+“Holes” in coverage. It is difficult to capture all functional or structural components, especially those of higher levels.
+Item overlap. Trying to cover a big scope of material there may be a duplication of the same information. This can lead to excessive testings.
+Reporting problems. Complex system components, functions, and their interaction are difficult or even impossible to illustrate, applying checklists.
